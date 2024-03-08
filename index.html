@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Price </title>
+</head>
+
+<body>
+    <div class="head">
+    <h1>MOMOs CAFE</h1>
+    <p><i>Trusted by many</i></p>
+    </div>
+    <div class="menu">
+        <select name="menu" id="name">
+            <option disabled selected>MENU (price per plate) </option>
+            <option>Veg momo (steamed) 40 RS </option>
+            <option>Veg momo (fried) 48 RS </option>
+            <option>Paneer momo (steamed) 50 RS </option>
+            <option>Paneer momo (fried) 60 RS </option>
+            <option>Chicken momo (steamed) 60 RS </option>
+            <option>Chicken momo (fried) 72 RS </option>
+    
+        </select>
+    </div>
+    <div class="container">
+        <div class="m">
+            <h1> Which MOMOs you had ?</h1>
+            <select name="MOMOs" id="type" value="Which MOMOs you had ?">
+                    <option disabled selected> Select Here </option>
+                    <option value="40" id="v"> Veg Momo </option>
+                     <option value="50"> Paneer momo </option>
+                 <option value="60"> Chicken momo</option>
+            </select>
+            <h1> Steamed or Fried ? </h1>
+            <select name="momo" id="sf">
+               <option disabled selected> Select Here </option>
+                 <option value="1"> Steamed </option>
+                <option value="1.2"> Fried  </option>
+             </select>
+            <h1> How much quantity ?</h1>
+            <select name="quan" id="quantity">
+                 <option disabled selected> Select Here </option>
+                 <option value="0.5"> Half plate </option>
+                <option value="1"> Full Plate </option>
+            </select>
+            <select id="plate">
+            <option value="1"> 1</option> 
+            <option value="2"> 2</option>
+            <option value="3"> 3</option>
+            <option value="4"> 4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7"> 7</option>
+            <option value="8"> 8</option>
+            <option value="9"> 9</option>
+            <option value="10"> 10</option>
+            </select>
+            <br>
+            <button type="button" onclick="price()" id="calculate">Calculate !</button>
+            <input type="text" id="res" placeholder="Amount">
+            <br>
+            <br>
+            <br>
+            <input type="text" id="msg" placeholder="Message">
+            <br>
+            <br>
+            <br>
+            
+
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
